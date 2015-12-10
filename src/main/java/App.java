@@ -9,7 +9,7 @@ public class App {
   public static void main(String[] args) {
     String layout = "templates/layout.vtl";
 
-    get("/form", (request, response) -> {
+    get("/", (request, response) -> {
       HashMap model = new HashMap();
 
       model.put("template", "templates/form.vtl");
